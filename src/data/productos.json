@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "nombre": "Jabón Líquido Azul (Tipo Ariel)",
+    "categoria": "ropa",
+    "descripcion": "Fórmula concentrada para limpieza profunda de telas blancas y de color.",
+    "uso": "Use 1/2 taza por carga de ropa de 5kg. Para manchas difíciles, aplique directamente antes de lavar.",
+    "imagenes": ["https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?q=80&w=800"],
+    "presentaciones": ["1/2L", "1L", "5L"],
+    "color": "Azul"
+  },
+  {
+    "id": 2,
+    "nombre": "Lavaplatos Verde Concentrado",
+    "categoria": "cocina",
+    "descripcion": "Alto poder desengrasante con aroma cítrico.",
+    "uso": "Diluya una cucharada en un envase con agua o aplique directamente sobre la esponja.",
+    "imagenes": ["https://images.unsplash.com/photo-1607412323713-31cac342c9ca?q=80&w=800"],
+    "presentaciones": ["1/2L", "1L"],
+    "color": "Verde"
+  },
+  {
+    "id": 3,
+    "nombre": "Lavaplatos Naranja (Tipo Brisol)",
+    "categoria": "cocina",
+    "descripcion": "Eficacia total contra la grasa pesada en ollas y sartenes.",
+    "uso": "Aplique sobre la superficie, deje actuar por 1 minuto y frote con la esponja.",
+    "imagenes": ["https://images.unsplash.com/photo-1585833014472-7a42c00e7c61?q=80&w=800"],
+    "presentaciones": ["1/2L", "1L"],
+    "color": "Naranja"
+  },
+  {
+    "id": 4,
+    "nombre": "Desinfectante Lavanda (Morado)",
+    "categoria": "suelo",
+    "descripcion": "Limpieza profunda con aroma relajante y duradero.",
+    "uso": "Añada un chorrito en un balde con agua y pase el coleto/mopa de forma habitual.",
+    "imagenes": ["https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=800"],
+    "presentaciones": ["1L", "5L"],
+    "color": "Morado"
+  },
+  {
+    "id": 5,
+    "nombre": "Desinfectante Citronela (Amarillo)",
+    "categoria": "suelo",
+    "descripcion": "Ideal para ahuyentar insectos y dejar un aroma fresco.",
+    "uso": "Use directamente en entradas o diluido en agua para limpieza general de pisos.",
+    "imagenes": ["https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=800"],
+    "presentaciones": ["1L", "5L"],
+    "color": "Amarillo"
+  },
+  {
+    "id": 6,
+    "nombre": "Desinfectante Pino (Marrón)",
+    "categoria": "suelo",
+    "descripcion": "Poder bactericida natural con aroma a bosque.",
+    "uso": "Especial para baños y áreas exteriores. Use diluido para mayor rendimiento.",
+    "imagenes": ["https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?q=80&w=800"],
+    "presentaciones": ["1L", "5L"],
+    "color": "Marrón"
+  },
+  {
+    "id": 7,
+    "nombre": "Desinfectante Cherry (Rojo)",
+    "categoria": "suelo",
+    "descripcion": "Fragancia dulce y refrescante para todo tipo de superficies.",
+    "uso": "Limpieza de pisos y superficies lavables en el hogar u oficina.",
+    "imagenes": ["https://images.unsplash.com/photo-1622327038162-8438186105a3?q=80&w=800"],
+    "presentaciones": ["1L", "5L"],
+    "color": "Rojo"
+  },
+  {
+    "id": 8,
+    "nombre": "Cloro Concentrado",
+    "categoria": "especiales",
+    "descripcion": "Máxima desinfección y blanqueado.",
+    "uso": "No mezclar con otros químicos. Use guantes. Ideal para baños y ropa blanca.",
+    "imagenes": ["https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800"],
+    "presentaciones": ["1L", "5L"],
+    "color": "Transparente/Amarillento"
+  },
+  {
+    "id": 9,
+    "nombre": "Cera Autobrillante",
+    "categoria": "suelo",
+    "descripcion": "Brillo tipo espejo para granito, cerámica y madera.",
+    "uso": "Aplique sobre el piso limpio y seco. Extienda uniformemente sin dejar charcos.",
+    "imagenes": ["https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=800"],
+    "presentaciones": ["1/2L", "1L"],
+    "color": "Blanco"
+  },
+  {
+    "id": 10,
+    "nombre": "Desengrasante Multiusos",
+    "categoria": "especiales",
+    "descripcion": "Elimina grasa pegada en campanas, estufas y motores.",
+    "uso": "Rocíe la superficie, deje actuar 2-5 minutos y retire con paño húmedo.",
+    "imagenes": ["https://images.unsplash.com/photo-1590611357129-e15b0d55242d?q=80&w=800"],
+    "presentaciones": ["1/2L", "1L"],
+    "color": "Verde Neón"
+  },
+  {
+    "id": 11,
+    "nombre": "Limpia Cerámica y Saca Mugre",
+    "categoria": "suelo",
+    "descripcion": "Especialista en juntas y baldosas muy sucias.",
+    "uso": "Aplique en las juntas, frote con cepillo y enjuague con abundante agua.",
+    "imagenes": ["https://images.unsplash.com/photo-1584622781514-f63f769c1340?q=80&w=800"],
+    "presentaciones": ["1L"],
+    "color": "Transparente"
+  }
+]
