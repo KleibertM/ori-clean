@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="pt-24 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="relative rounded-[1rem] overflow-hidden bg-slate-900 h-[400px] md:h-[500px] flex items-center">
+        <div className="relative rounded-[1rem] overflow-hidden bg-slate-900 h-[500px] md:h-[500px] flex items-center">
           {/* Imagen de fondo con overlay */}
           <img 
             src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200" 

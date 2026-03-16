@@ -44,7 +44,7 @@ export default function ProductDetail() {
                                 <h3 className="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
                                     <span className="text-blue-500">✨</span> ¿Cómo usar este producto?
                                 </h3>
-                                <p className="text-slate-600 leading-relaxed bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                                <p className="text-slate-900 leading-relaxed bg-white/40 backdrop-blur-sm p-6 rounded-3xl border border-white/60 shadow-inner">
                                     {producto.uso}
                                 </p>
                             </div>
