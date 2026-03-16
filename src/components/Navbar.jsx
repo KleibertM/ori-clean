@@ -1,16 +1,19 @@
 import { ShoppingCartIcon, Bars3Icon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';
 
-export default function Navbar({ cartCount, onOpenCart }) {
+export default function Navbar({ cartCount }) {
+    const navigate = useNavigate();
     return (
         <nav className="fixed top-0 left-0 w-full glass-navbar z-50">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="flex items-center gap-2 cursor-pointer"
+                onClick={() => navigate(`/`)}>
+                    <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
                         <span className="text-white font-black text-xl">L</span>
                     </div>
-                    <span className="font-black text-black tracking-tighter text-xl uppercase">
-                        Ori<span className="text-pink-700">Clean</span>
+                    <span className="font-black text-black tracking-tighter text-xl">
+                            LIMPIA<span className="text-purple-600">TODO</span>
                     </span>
                 </div>
 
@@ -23,7 +26,7 @@ export default function Navbar({ cartCount, onOpenCart }) {
 
                 {/* Cart Icon */}
                 <button
-                    onClick={onOpenCart}
+                    onClick={() => navigate(`/carrito`)}
                     className="relative p-2 hover:bg-slate-50 rounded-full transition"
                 >
                     <ShoppingCartIcon className="w-6 h-6 text-slate-700" />

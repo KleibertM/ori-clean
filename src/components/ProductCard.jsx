@@ -14,10 +14,11 @@ export default function ProductCard({ producto, onAdd }) {
   const [cantidad, setCantidad] = useState(1);
 
   return (
-    <div className="glass-card rounded-3xl overflow-hidden flex flex-col h-full hover:scale-[1.02] transition-all duration-300">
+    <div className="glass-card border-none rounded-3xl overflow-hidden flex flex-col h-full hover:scale-[1.02] transition-all duration-300">
       
       {/* Carrusel 3:4 */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-slate-50">
+      <div className="relative aspect-[9/16] overflow-hidden"
+      onClick={() => navigate(`/producto/${producto.id}`)}>
         <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="h-full w-full">
           {producto.imagenes.map((img, i) => (
             <SwiperSlide key={i}>
@@ -28,7 +29,7 @@ export default function ProductCard({ producto, onAdd }) {
       </div>
 
       <div className="p-4 flex flex-col flex-grow">
-        <h3 className="font-extrabold text-black text-sm md:text-base leading-tight mb-3">
+        <h3 className="font-bold text-black text-sm md:text-base leading-tight mb-3">
           {producto.nombre}
         </h3>
 
@@ -50,7 +51,7 @@ export default function ProductCard({ producto, onAdd }) {
         {/* Botón Añadir con estilo moderno */}
         <button 
           onClick={() => onAdd(producto, medidaSel, cantidad)}
-          className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold text-xs uppercase flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-blue-100"
+          className="w-full bg-green-500 text-white py-3 rounded-xl font-bold text-xs uppercase flex items-center justify-center gap-2 hover:bg-green-600 transition-colors shadow-lg shadow-green-100"
         >
           <PlusIcon className="w-4 h-4" />
           Añadir al pedido
@@ -58,7 +59,7 @@ export default function ProductCard({ producto, onAdd }) {
         
         <button 
           onClick={() => navigate(`/producto/${producto.id}`)}
-          className="mt-3 flex items-center justify-center gap-1 text-slate-400 text-[10px] font-bold hover:text-blue-600 transition-colors uppercase tracking-tighter"
+          className="mt-3 flex items-center justify-center gap-1 text-slate-400 text-[10px] font-bold hover:text-green-600 transition-colors uppercase tracking-tighter"
         >
           <EyeIcon className="w-3 h-3" />
           Ver Modo de Uso

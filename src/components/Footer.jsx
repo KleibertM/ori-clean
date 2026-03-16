@@ -13,14 +13,14 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-slate-900 mb-4">Atención al Cliente</h4>
             <p className="text-slate-500 text-sm">Lunes a Sábado: 8:00 AM - 5:00 PM</p>
-            <p className="text-slate-500 text-sm">Ubicados en: Tu Ciudad, Venezuela</p>
+            <p className="text-slate-500 text-sm">Ubicados en: La Victoria, Edo. Aragua</p>
           </div>
           <div>
             <h4 className="font-bold text-slate-900 mb-4">Pagos</h4>
             <div className="flex flex-wrap gap-2">
-              <span className="text-[10px] font-bold border border-slate-200 px-2 py-1 rounded text-slate-400 uppercase">Pago Móvil</span>
-              <span className="text-[10px] font-bold border border-slate-200 px-2 py-1 rounded text-slate-400 uppercase">Zelle</span>
-              <span className="text-[10px] font-bold border border-slate-200 px-2 py-1 rounded text-slate-400 uppercase">Efectivo $</span>
+              <span className="text-[14px] font-bold border border-slate-200 px-2 py-1 rounded text-black uppercase">Pago Móvil</span>
+              <span className="text-[14px] font-bold border border-slate-200 px-2 py-1 rounded text-black uppercase">Zelle</span>
+              <span className="text-[14px] font-bold border border-slate-200 px-2 py-1 rounded text-black uppercase">Efectivo $</span>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function ProductDetail() {
     if (!producto) return <div className="p-20 text-center text-slate-500 font-bold">Producto no encontrado...</div>;
 
     return (
-        <div className="min-h-screen bg-white pt-24 pb-12 px-6">
+        <div className="min-h-screen pt-24 pb-12 px-0">
             <div className="max-w-4xl mx-auto">
                 {/* Botón Volver */}
                 <button
@@ -21,9 +21,9 @@ export default function ProductDetail() {
                     ← Volver al catálogo
                 </button>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* Imagen destacada */}
-                    <div className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl">
+                    <div className="aspect-[3/4]  overflow-hidden shadow-2xl">
                         <img
                             src={producto.imagenes[0]}
                             className="w-full h-full object-cover"
@@ -32,7 +32,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* Información de Uso */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col m-2 p-6 rounded-t-[2rem] glass-card mt-[-6rem] shadow-xl border-none">
                         <span className="text-blue-600 font-black uppercase text-xs tracking-widest mb-2">
                             {producto.categoria}
                         </span>

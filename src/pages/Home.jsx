@@ -44,8 +44,8 @@ export default function Home({ onAdd }) {
               onClick={() => setCategoriaActiva(cat.id)}
               className={`px-6 py-2 rounded-full text-xs font-black uppercase tracking-wider transition-all border shrink-0 ${
                 categoriaActiva === cat.id
-                  ? 'bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-100'
-                  : 'bg-white text-slate-400 border-slate-200 hover:border-blue-300'
+                  ? 'bg-green-500 text-white border-green-600 shadow-lg shadow-green-100'
+                  : 'glass-card efecto-burbujas text-slate-400 border-slate-200 hover:border-green-300'
               }`}
             >
               {cat.nombre}

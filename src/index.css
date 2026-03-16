@@ -59,10 +59,12 @@
   position: absolute;
   border-radius: 50%;
   opacity: 0.6;
-  z-index: -1; /* Importante: las burbujas van DETRÁS del contenido */
-  pointer-events: none; /* No interfieren con los clics */
-  filter: blur(2px); /* Un ligero desenfoque para suavidad */
-  animation: flotarBurbujas 8s infinite ease-in-out;
+  z-index: -1;
+  /*Importante:;
+  lasburbujasvanDETRÁSdelcontenido*/pointer-events: none;
+  /*Nointerfierenconlosclics*/filter: blur(2px);
+  /*Unligerodesenfoqueparasuavidad*/animation: flotarBurbujas 4s infinite ease-in-out;
+  -webkit-animation: flotarBurbujas 4s infinite ease-in-out;
 }
 
 /* Burbuja 1: Rosa (::before) */
@@ -84,6 +86,7 @@
   right: 15%;
   animation-delay: 2s;
 }
+
 
 /* Definición del movimiento (Subir, moverse a los lados y desvanecerse) */
 @keyframes flotarBurbujas {
@@ -117,3 +120,18 @@
 /* Para componentes grandes (como el Hero o TrustBanner), puedes crear otra clase
    o añadir más burbujas usando divs internos si prefieres, pero esta solución 
    con pseudo-elementos es la más limpia. */
+
+   /* Añadir esto en index.css */
+table {
+  border-spacing: 0;
+}
+
+th, td {
+  /* Para que el texto resalte sobre el glass */
+  color: #000;
+}
+
+/* Un hover suave para las filas de la tabla */
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
