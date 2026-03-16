@@ -54,7 +54,7 @@ export default function ProductCard({ producto, onAdd }) {
           className="w-full bg-green-500 text-white py-3 rounded-xl font-bold text-xs uppercase flex items-center justify-center gap-2 hover:bg-green-600 transition-colors shadow-lg shadow-green-100"
         >
           <PlusIcon className="w-4 h-4" />
-          Añadir al pedido
+          añadir
         </button>
         
         <button 
