@@ -1,8 +1,8 @@
 export default function TrustBanner() {
   const info = [
-    { icon: "💸", title: "Pagos Rápidos", desc: "Pago Móvil, Zelle, Cash" },
-  { icon: "📍", title: "Retiro Local", desc: "Entrega en tienda" }, // Cambio de Delivery a Retiro
-  { icon: "⭐", title: "Calidad", desc: "Fórmulas concentradas" }
+    { icon: "💸", title: "Pagos Rápidos", desc: "Pago Móvil, Zelle, Cash", link: "#footer" },
+    { icon: "📍", title: "Retiro Local", desc: "Entrega en tienda", link: "https://maps.app.goo.gl/GpeQE6GFSr2iXRz18" }, // Cambio de Delivery a Retiro
+    { icon: "⭐", title: "Calidad", desc: "Fórmulas concentradas", link: "#productos" }
   ];
 
   return (
@@ -10,9 +10,10 @@ export default function TrustBanner() {
   <div className="glass-card efecto-burbujas rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl border-none">
     <div className="grid grid-cols-3 md:flex md:flex-row divide-x divide-white/20">
       {info.map((item, i) => (
-        <div 
+        <a 
           key={i} 
           className="flex flex-col md:flex-row items-center md:items-center justify-center text-center md:text-left gap-2 md:gap-4 p-3 md:p-6 hover:bg-white/20 transition-colors"
+          href={item.link}
         >
           {/* Icono: Un poco más pequeño en móvil para ahorrar espacio */}
           <span className="text-xl md:text-3xl filter drop-shadow-sm">
@@ -30,7 +31,7 @@ export default function TrustBanner() {
               {item.desc}
             </p>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   </div>
