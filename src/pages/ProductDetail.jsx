@@ -32,7 +32,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* Información de Uso */}
-                    <div className="flex flex-col m-2 p-6 rounded-t-[2rem] glass-card mt-[-6rem] shadow-xl border-none">
+                    <div className="flex flex-col m-2 p-6 rounded-t-[2rem] glass-card mt-[1rem] shadow-xl border-none">
                         <span className="text-blue-600 font-black uppercase text-xs tracking-widest mb-2">
                             {producto.categoria}
                         </span>

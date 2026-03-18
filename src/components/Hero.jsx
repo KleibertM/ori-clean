@@ -16,7 +16,7 @@ export default function Hero() {
             </span>
             <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
               Calidad que brilla, <br />
-              <span className="text-blue-700">Precios que rinden.</span>
+              <span className="text-black">Precios que rinden.</span>
             </h1>
             <p className="text-white text-lg mb-8">
               Encuentra los mejores productos de limpieza al mayor y detal. 

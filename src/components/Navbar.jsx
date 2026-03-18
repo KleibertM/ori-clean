@@ -5,15 +5,14 @@ export default function Navbar({ cartCount }) {
     const navigate = useNavigate();
     return (
         <nav className="fixed top-0 left-0 w-full glass-navbar z-50">
-            <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" onClick={() => navigate(`/`)}>
                 {/* Logo */}
-                <div className="flex items-center gap-2 cursor-pointer"
-                onClick={() => navigate(`/`)}>
+                <div className="flex items-center gap-2 cursor-pointer">
                     <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-                        <span className="text-white font-black text-xl">L</span>
+                        <span className="text-white font-black text-xl">P</span>
                     </div>
                     <span className="font-black text-black tracking-tighter text-xl">
-                            LIMPIA<span className="text-purple-600">TODO</span>
+                        Pur
                     </span>
                 </div>
 

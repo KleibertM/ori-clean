@@ -30,7 +30,7 @@ export default function Home({ onAdd }) {
         <TrustBanner />
       </div>
 
-      <section id="productos" className="max-w-7xl mx-auto px-4 pt-16">
+      <section id="productos" className="max-w-7xl mx-auto px-4 pt-8">
         <div className="text-center mb-10">
           <h2 className="text-blue-600 font-bold uppercase tracking-widest text-xs mb-2">Nuestro Catálogo</h2>
           <h3 className="text-3xl font-black text-slate-900 italic">Eficacia en cada gota</h3>
