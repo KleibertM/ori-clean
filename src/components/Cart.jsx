@@ -6,7 +6,7 @@ export default function Cart({ items, updateQuantity, removeItem }) {
   const totalItems = items.reduce((acc, item) => acc + item.cantidad, 0);
 
   const enviarWhatsApp = () => {
-    const telefono = "584120000000"; // <-- PON AQUÍ EL NÚMERO DE TU TÍA
+    const telefono = "584149442141"; // <-- PON AQUÍ EL NÚMERO DE TU TÍA
     
     let mensaje = "¡Hola! 👋 Quisiera realizar el siguiente pedido en *Ori-Clean*:\n\n";
     

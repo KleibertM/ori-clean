@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h4 className="font-black text-slate-900 mb-4 uppercase tracking-tighter">Pur</h4>
+            <h4 className="font-black text-slate-900 mb-4 uppercase tracking-tighter">CJ-Limpio</h4>
             <p className="text-slate-500 text-sm leading-relaxed">
               Tu aliado en productos de limpieza de alta concentración. 
               Ventas al mayor y detal con atención personalizada.
