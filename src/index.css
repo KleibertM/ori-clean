@@ -7,6 +7,14 @@
   --color-celeste-p: #b2e2f2;
   --color-lila-p: #decafb;
 }
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-in {
+  animation: slideInRight 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 /* Forzamos el fondo en el HTML y Body */
 @layer base {

@@ -8,7 +8,7 @@ export default function Cart({ items, updateQuantity, removeItem }) {
   const enviarWhatsApp = () => {
     const telefono = "584149442141"; // <-- PON AQUÍ EL NÚMERO DE TU TÍA
     
-    let mensaje = "¡Hola! 👋 Quisiera realizar el siguiente pedido en *Ori-Clean*:\n\n";
+    let mensaje = "¡Hola! 👋 Quisiera realizar el siguiente pedido en *CJ-Limpio*:\n\n";
     
     items.forEach(item => {
       mensaje += `✅ *${item.nombre}*\n`;

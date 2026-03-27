@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import WhatsappButton from './utils/WhatsAppBtn';
 import ProductDetail from './pages/ProductDetail';
 import ScrollToTop from './utils/ScrollToTop';
+import Toast from './components/Toast';
 
 export default function App() {
   const [carrito, setCarrito] = useState(() => {
@@ -25,19 +26,30 @@ export default function App() {
     localStorage.setItem('cj_cart_storage', JSON.stringify(carrito));
   }, [carrito]);
 
-  // 2. Agregar (Tu lógica está perfecta, la mantenemos)
+  // Estado para la notificación
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+
   const agregarAlCarrito = (producto, medida, cantidad) => {
     const idCarrito = `${producto.id}-${medida}`;
+    
+    // Lógica de agregado (la que ya tienes)
     setCarrito(prev => {
       const existe = prev.find(i => i.idCarrito === idCarrito);
       if (existe) {
-        return prev.map(i => i.idCarrito === idCarrito 
-          ? { ...i, cantidad: i.cantidad + cantidad } 
-          : i
-        );
+        return prev.map(i => i.idCarrito === idCarrito ? { ...i, cantidad: i.cantidad + cantidad } : i);
       }
       return [...prev, { ...producto, medida, cantidad, idCarrito }];
     });
+
+    // --- ANIMACIÓN DE NOTIFICACIÓN ---
+    setToastMessage(`${producto.nombre} añadido`);
+    setShowToast(true);
+
+    // Ocultar automáticamente después de 3 segundos
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
   };
   // 3. Aumentar/Disminuir cantidad
   const updateQuantity = (idCarrito, change) => {
@@ -62,6 +74,8 @@ export default function App() {
   return (
     <div className="antialiased">
       <ScrollToTop />
+      <Toast  message={toastMessage} visible={showToast} />
+
       <Navbar cartCount={totalItems} />
       <Routes>
         <Route path="/" element={<Home onAdd={agregarAlCarrito} />} />
